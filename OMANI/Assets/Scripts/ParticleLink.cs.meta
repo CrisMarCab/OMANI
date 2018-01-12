@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bffe2e5fd74ed6d43a6aa97e38776d32
+timeCreated: 1508935736
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - parte1: {instanceID: 0}
+  - parte2: {instanceID: 0}
+  - parte3: {instanceID: 0}
+  - newParticleTest: {fileID: 1037672017852838, guid: 5348b0cc09a51554ab26944518684876,
+      type: 2}
+  - redeffect: {fileID: 1475812698002376, guid: 4ee5aa7ba81db714f9aeeaf54a57be13,
+      type: 2}
+  - blueeffect: {fileID: 1855197982365298, guid: dd3a4caa87347ea488bcaa76e69a6130,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

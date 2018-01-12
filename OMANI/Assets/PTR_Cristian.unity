@@ -1,0 +1,1217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 8
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 4
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 9
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &15594788 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1974177864801728, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!4 &15594789 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4659630857453960, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!1 &325871086 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1071027516362874, guid: 19d90a298d8a9264e968df912ff38236,
+    type: 2}
+  m_PrefabInternal: {fileID: 478822734}
+--- !u!1001 &478822734
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 55.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 15.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 28.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.92387867
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268548
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._preferredSerialization
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedDocument
+      value: <component version="1.8" type="RAIN.Core.AIRig" reference="0" includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_useUnityMessages>True</_useUnityMessages><_useFixedUpdate>False</_useFixedUpdate><_ai
+        reference="1"><_isActive>True</_isActive><_body sceneobject="223f4f90-a9ea-4c4e-ac28-1aba4bc7a313"></_body><_workingMemory
+        type="RAIN.Memory.BasicMemory" reference="2"><_memoryItems><element0 reference="3"><Key>state</Key><ValueType>System.String</ValueType><Value
+        type="System.String">free</Value></element0><element1 reference="4"><Key>objective</Key><ValueType>UnityEngine.GameObject</ValueType><Value></Value></element1><element2
+        reference="17"><Key>tieneBalas</Key><ValueType>System.Boolean</ValueType><Value
+        type="System.Boolean">True</Value></element2></_memoryItems></_workingMemory><_mind
+        type="RAIN.Minds.BasicMind" reference="5"><_behaviorTree object="0"></_behaviorTree><_behaviorTreeBindings></_behaviorTreeBindings></_mind><_motor
+        type="RAIN.Motion.BasicMotor" reference="6"><_speed>1</_speed><_rotationSpeed>360</_rotationSpeed><_closeEnoughDistance>0.1</_closeEnoughDistance><_closeEnoughAngle>0.1</_closeEnoughAngle><_faceBeforeMoveAngle>360</_faceBeforeMoveAngle><_maxHeightOffset>1</_maxHeightOffset><_allow3DMovement>False</_allow3DMovement><_allow3DRotation>False</_allow3DRotation><_allowOffGraphMovement>True</_allowOffGraphMovement><_useRootMotion>True</_useRootMotion><_overrideRootRotation>True</_overrideRootRotation><_mecanimParameters></_mecanimParameters></_motor><_animator
+        type="RAIN.Animation.BasicAnimator" reference="7"><_showVisual>True</_showVisual><_leftEye
+        reference="8"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_leftEye><_rightEye
+        reference="9"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_rightEye><_head
+        reference="10"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_head><_neck
+        reference="11"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_neck><_lookTime>1</_lookTime><_minimumTargetChange>0.1</_minimumTargetChange><_resetEachFrame>False</_resetEachFrame></_animator><_navigator
+        type="RAIN.Navigation.BasicNavigator" reference="12"><_drawPaths>False</_drawPaths><_pathColor>0.6,0,0.6,1</_pathColor><_outlineColorOffset>-0.5</_outlineColorOffset><_maxPathfindingSteps>100</_maxPathfindingSteps><_maxPathLength>0</_maxPathLength><_padding>0</_padding><_graphTags></_graphTags></_navigator><_senses
+        type="RAIN.Perception.BasicSenses" reference="13"><_sensors><element0 type="RAIN.Perception.Sensors.VisualSensor"
+        reference="14"><_showVisual>True</_showVisual><_sensorName>Close</_sensorName><_isActive>True</_isActive><_sensorColor>0,0.6,0,1</_sensorColor><_mountPoint
+        sceneobject=""></_mountPoint><_positionOffset>0,0.8,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>1.66</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>360</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>False</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element0><element1
+        type="RAIN.Perception.Sensors.VisualSensor" reference="15"><_showVisual>True</_showVisual><_sensorName>Vision</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0.6,0.6,1</_sensorColor><_mountPoint
+        sceneobject="223f4f90-a9ea-4c4e-ac28-1aba4bc7a313" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>15</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>180</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element1><element2
+        type="RAIN.Perception.Sensors.VisualSensor" reference="16"><_showVisual>True</_showVisual><_sensorName>Disparo</_sensorName><_isActive>True</_isActive><_sensorColor>0,0.6,0,1</_sensorColor><_mountPoint
+        sceneobject="223f4f90-a9ea-4c4e-ac28-1aba4bc7a313" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>7</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>360</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element2></_sensors></_senses><_customElements></_customElements></_ai></component>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedMetaDocument
+      value: <meta><element0><key>/component/_ai+_selected</key><value type="System.Int32">1</value></element0><element1><key>/component/_ai/_navigator/_graphTags+_foldout</key><value
+        type="System.Boolean">False</value></element1></meta>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: a4b8a543c0ae8da47b7107b036332b65, type: 3}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 495d44f823345994592bd1ccb749f634, type: 3}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 4900000, guid: 495d44f823345994592bd1ccb749f634, type: 3}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedCustomData.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172394156406464, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: startRagdoll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517599441789226, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.203
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517599441789226, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.678
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172394156406464, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: ai
+      value: 
+      objectReference: {fileID: 1337101212}
+    - target: {fileID: 144293636685283988, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.00000003539028
+      objectReference: {fileID: 0}
+    - target: {fileID: 144293636685283988, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.012884843
+      objectReference: {fileID: 0}
+    - target: {fileID: 144293636685283988, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.000000006984925
+      objectReference: {fileID: 0}
+    - target: {fileID: 144573085492132392, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.007568856
+      objectReference: {fileID: 0}
+    - target: {fileID: 144573085492132392, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.014949078
+      objectReference: {fileID: 0}
+    - target: {fileID: 144573085492132392, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.0008886421
+      objectReference: {fileID: 0}
+    - target: {fileID: 144015385055425444, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.00010410184
+      objectReference: {fileID: 0}
+    - target: {fileID: 144015385055425444, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.03350544
+      objectReference: {fileID: 0}
+    - target: {fileID: 144015385055425444, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.0062668626
+      objectReference: {fileID: 0}
+    - target: {fileID: 144721511633496946, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.0047079413
+      objectReference: {fileID: 0}
+    - target: {fileID: 144721511633496946, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.0020860482
+      objectReference: {fileID: 0}
+    - target: {fileID: 144721511633496946, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.0012021947
+      objectReference: {fileID: 0}
+    - target: {fileID: 144644401635742042, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.00000010593794
+      objectReference: {fileID: 0}
+    - target: {fileID: 144644401635742042, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.013443108
+      objectReference: {fileID: 0}
+    - target: {fileID: 144644401635742042, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.00000005401671
+      objectReference: {fileID: 0}
+    - target: {fileID: 144469693496349708, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.007376928
+      objectReference: {fileID: 0}
+    - target: {fileID: 144469693496349708, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.01625266
+      objectReference: {fileID: 0}
+    - target: {fileID: 144469693496349708, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00049742725
+      objectReference: {fileID: 0}
+    - target: {fileID: 144431175229955974, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.005169708
+      objectReference: {fileID: 0}
+    - target: {fileID: 144431175229955974, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.0019164816
+      objectReference: {fileID: 0}
+    - target: {fileID: 144431175229955974, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.0011859601
+      objectReference: {fileID: 0}
+    - target: {fileID: 144507239207906612, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.00000028032807
+      objectReference: {fileID: 0}
+    - target: {fileID: 144507239207906612, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.015217116
+      objectReference: {fileID: 0}
+    - target: {fileID: 144507239207906612, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.00000017136334
+      objectReference: {fileID: 0}
+    - target: {fileID: 144592761625083796, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.000000015366817
+      objectReference: {fileID: 0}
+    - target: {fileID: 144592761625083796, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.013246032
+      objectReference: {fileID: 0}
+    - target: {fileID: 144592761625083796, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.00000006239852
+      objectReference: {fileID: 0}
+    - target: {fileID: 144803194172305914, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.00000002863817
+      objectReference: {fileID: 0}
+    - target: {fileID: 144803194172305914, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.011922128
+      objectReference: {fileID: 0}
+    - target: {fileID: 144803194172305914, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.000000095926225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4511786562655768, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -110
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172394156406464, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 478822736}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &478822735 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236,
+    type: 2}
+  m_PrefabInternal: {fileID: 478822734}
+--- !u!1 &478822736 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1698733065903106, guid: 19d90a298d8a9264e968df912ff38236,
+    type: 2}
+  m_PrefabInternal: {fileID: 478822734}
+--- !u!1001 &551722865
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 144.32727
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -8.218786
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 124.42432
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842139726348082, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: threedee
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: sounds.Array.data[5].loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: sounds.Array.data[5].MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: guardia
+      value: 
+      objectReference: {fileID: 478822735}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: guardia1
+      value: 
+      objectReference: {fileID: 734478752}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: sounds.Array.data[0].MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: sounds.Array.data[3].Priority
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: sounds.Array.data[6].volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114835193180774578, guid: c84538797a4accb4ea2bd87dec51b2ab,
+        type: 2}
+      propertyPath: sounds.Array.data[0].MinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c84538797a4accb4ea2bd87dec51b2ab, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &659543140 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1914344636724476, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!4 &659543144 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4732332320034882, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!1 &734478746 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1698733065903106, guid: 19d90a298d8a9264e968df912ff38236,
+    type: 2}
+  m_PrefabInternal: {fileID: 1848055897}
+--- !u!4 &734478752 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236,
+    type: 2}
+  m_PrefabInternal: {fileID: 1848055897}
+--- !u!1 &853780505 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1071027516362874, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!4 &853780508 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4517599441789226, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!1 &1014923073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1014923074}
+  - component: {fileID: 1014923076}
+  - component: {fileID: 1014923075}
+  m_Layer: 8
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1014923074
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014923073}
+  m_LocalRotation: {x: -0, y: -0.92387867, z: -0, w: 0.38268548}
+  m_LocalPosition: {x: -6.5, y: 10.316022, z: -54.4}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!154 &1014923075
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014923073}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: b322e4c1a9d094b4eba530d1bff90560, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &1014923076
+Terrain:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014923073}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_TerrainData: {fileID: 15600000, guid: b322e4c1a9d094b4eba530d1bff90560, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_CastShadows: 1
+  m_DrawHeightmap: 1
+  m_DrawTreesAndFoliage: 1
+  m_ReflectionProbeUsage: 1
+  m_MaterialType: 0
+  m_LegacySpecular:
+    serializedVersion: 2
+    rgba: 4286545791
+  m_LegacyShininess: 0.078125
+  m_MaterialTemplate: {fileID: 0}
+  m_BakeLightProbesForTrees: 1
+  m_ScaleInLightmap: 0.0512
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!1 &1058149113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1058149115}
+  - component: {fileID: 1058149114}
+  m_Layer: 0
+  m_Name: Navigation Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1058149114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1058149113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 354912517, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 1
+    _includeCustomData: 0
+    _serializedDocument: <component version="1.8" type="RAIN.Navigation.NavMesh.NavMeshRig"
+      reference="0" includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_navMesh
+      reference="1"><_mountPoint sceneobject="241ae106-ed84-4d74-ad5a-f84b847e94b1"
+      component="0"></_mountPoint><_graphName>Navigation Mesh</_graphName><_size>10</_size><_automaticGridSize>True</_automaticGridSize><_gridSize>4</_gridSize><_meshColor>0.6,0.6,0.6,1</_meshColor><_outlineColorOffset>-0.5</_outlineColorOffset><_visualHeightOffset>0.25</_visualHeightOffset><_previewColliders>True</_previewColliders><_displayMode>NavigationMesh</_displayMode><_includedLayers>-1</_includedLayers><_ignoredTags></_ignoredTags><_unwalkableTags></_unwalkableTags><_graphTags></_graphTags><_maxSlope>45</_maxSlope><_walkableHeight>2</_walkableHeight><_walkableRadius>0.55</_walkableRadius><_stepHeight>0.75</_stepHeight><_cellSize>0.1</_cellSize><_maxVertexError>0.2</_maxVertexError><_maxSegmentLength>5</_maxSegmentLength><_graph
+      reference="2" customdata="0"></_graph></_navMesh></component>
+    _serializedMetaDocument: <meta><element0><key>/component/_navMesh/_ignoredTags+_foldout</key><value
+      type="System.Boolean">False</value></element0><element1><key>/component/_navMesh/_unwalkableTags+_foldout</key><value
+      type="System.Boolean">False</value></element1><element2><key>/component/_navMesh/_graphTags+_foldout</key><value
+      type="System.Boolean">False</value></element2></meta>
+    _serializedObjects: []
+    _serializedCustomData:
+    - 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AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAABAAAA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
+--- !u!4 &1058149115
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1058149113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.86081, y: 16.4, z: -0.94968414}
+  m_LocalScale: {x: 10.900001, y: 1, z: 9.8}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1087100208 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1698733065903106, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!4 &1087100213 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!1 &1090985063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1090985065}
+  - component: {fileID: 1090985064}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1090985064
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090985063}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1090985065
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1090985063}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1142010867 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1397507312515124, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!4 &1142010871 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4556325134931234, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!1 &1337101212 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1123011597280694, guid: 19d90a298d8a9264e968df912ff38236,
+    type: 2}
+  m_PrefabInternal: {fileID: 478822734}
+--- !u!1 &1610139193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1610139198}
+  - component: {fileID: 1610139197}
+  - component: {fileID: 1610139196}
+  - component: {fileID: 1610139195}
+  - component: {fileID: 1610139194}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1610139194
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610139193}
+  m_Enabled: 1
+--- !u!124 &1610139195
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610139193}
+  m_Enabled: 1
+--- !u!92 &1610139196
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610139193}
+  m_Enabled: 1
+--- !u!20 &1610139197
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610139193}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &1610139198
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610139193}
+  m_LocalRotation: {x: -0.32933238, y: -0.22362433, z: 0.08059408, w: -0.9138036}
+  m_LocalPosition: {x: 45.12, y: 20.773552, z: 24.44}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1642268461
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1642268463}
+  - component: {fileID: 1642268462}
+  m_Layer: 0
+  m_Name: '[SerializedScene]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1642268462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642268461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -25400194, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedTags:
+  - _guid: 223f4f90-a9ea-4c4e-ac28-1aba4bc7a313
+    _sceneObject: {fileID: 478822736}
+    _sceneComponents:
+    - {fileID: 478822735}
+  - _guid: 241ae106-ed84-4d74-ad5a-f84b847e94b1
+    _sceneObject: {fileID: 1058149113}
+    _sceneComponents:
+    - {fileID: 1058149115}
+  - _guid: a0d48d61-b334-4573-808b-6096c85e5840
+    _sceneObject: {fileID: 1087100208}
+    _sceneComponents:
+    - {fileID: 1087100213}
+  - _guid: 0d5f3232-91dd-4bfc-9cb8-214412183ae9
+    _sceneObject: {fileID: 853780505}
+    _sceneComponents:
+    - {fileID: 853780508}
+  - _guid: 508578cd-3548-4c38-9c61-ab8942b4c8aa
+    _sceneObject: {fileID: 325871086}
+    _sceneComponents: []
+  - _guid: 984ad92a-e058-43a9-8ea1-96089d36c881
+    _sceneObject: {fileID: 659543140}
+    _sceneComponents:
+    - {fileID: 659543144}
+  - _guid: f79ddb22-88ec-4c3f-ac63-e56439904290
+    _sceneObject: {fileID: 1142010867}
+    _sceneComponents:
+    - {fileID: 1142010871}
+  - _guid: 64290af9-77f2-44c1-8095-dff2e79c8607
+    _sceneObject: {fileID: 15594788}
+    _sceneComponents:
+    - {fileID: 15594789}
+  - _guid: 43af913b-1eb0-4111-9f8e-5a93758b2ab3
+    _sceneObject: {fileID: 1894574580}
+    _sceneComponents:
+    - {fileID: 1894574581}
+  - _guid: 5f65a219-739e-435d-957a-ea31fba955a7
+    _sceneObject: {fileID: 734478746}
+    _sceneComponents:
+    - {fileID: 734478752}
+--- !u!4 &1642268463
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642268461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1815385081
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 37.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 16.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.92387867
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268548
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698733065903106, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+      propertyPath: m_Name
+      value: BarroBoy (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e4ad19db05e4bd748bd2d998eaf92cf8, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1848055897
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 49.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 15.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 32.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.92387867
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268548
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719418383564094, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698733065903106, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+      propertyPath: m_Name
+      value: Guardia (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 144592761625083796, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.000000051455554
+      objectReference: {fileID: 0}
+    - target: {fileID: 144592761625083796, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.013245864
+      objectReference: {fileID: 0}
+    - target: {fileID: 144592761625083796, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00000000791623
+      objectReference: {fileID: 0}
+    - target: {fileID: 144293636685283988, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.000000043306525
+      objectReference: {fileID: 0}
+    - target: {fileID: 144293636685283988, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.012884739
+      objectReference: {fileID: 0}
+    - target: {fileID: 144293636685283988, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.000000035390286
+      objectReference: {fileID: 0}
+    - target: {fileID: 144507239207906612, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.000000044703476
+      objectReference: {fileID: 0}
+    - target: {fileID: 144507239207906612, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.015217239
+      objectReference: {fileID: 0}
+    - target: {fileID: 144507239207906612, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.000000013038514
+      objectReference: {fileID: 0}
+    - target: {fileID: 144573085492132392, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.0075688995
+      objectReference: {fileID: 0}
+    - target: {fileID: 144573085492132392, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.014949386
+      objectReference: {fileID: 0}
+    - target: {fileID: 144573085492132392, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00088868866
+      objectReference: {fileID: 0}
+    - target: {fileID: 144431175229955974, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.0051697614
+      objectReference: {fileID: 0}
+    - target: {fileID: 144431175229955974, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.0019166529
+      objectReference: {fileID: 0}
+    - target: {fileID: 144431175229955974, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.0011860749
+      objectReference: {fileID: 0}
+    - target: {fileID: 144469693496349708, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.0073770043
+      objectReference: {fileID: 0}
+    - target: {fileID: 144469693496349708, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.016252825
+      objectReference: {fileID: 0}
+    - target: {fileID: 144469693496349708, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.0004975125
+      objectReference: {fileID: 0}
+    - target: {fileID: 144721511633496946, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.0047079925
+      objectReference: {fileID: 0}
+    - target: {fileID: 144721511633496946, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.0020858613
+      objectReference: {fileID: 0}
+    - target: {fileID: 144721511633496946, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.001202136
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._preferredSerialization
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedDocument
+      value: <component version="1.8" type="RAIN.Core.AIRig" reference="0" includecustomdata="False"><_visualMode>OnWhenSelected</_visualMode><_useUnityMessages>True</_useUnityMessages><_useFixedUpdate>False</_useFixedUpdate><_ai
+        reference="1"><_isActive>True</_isActive><_body sceneobject="5f65a219-739e-435d-957a-ea31fba955a7"></_body><_workingMemory
+        type="RAIN.Memory.BasicMemory" reference="2"><_memoryItems><element0 reference="3"><Key>state</Key><ValueType>System.String</ValueType><Value
+        type="System.String">free</Value></element0><element1 reference="4"><Key>objective</Key><ValueType>UnityEngine.GameObject</ValueType><Value></Value></element1><element2
+        reference="17"><Key>tieneBalas</Key><ValueType>System.Boolean</ValueType><Value
+        type="System.Boolean">True</Value></element2></_memoryItems></_workingMemory><_mind
+        type="RAIN.Minds.BasicMind" reference="5"><_behaviorTree object="0"></_behaviorTree><_behaviorTreeBindings></_behaviorTreeBindings></_mind><_motor
+        type="RAIN.Motion.BasicMotor" reference="6"><_speed>1</_speed><_rotationSpeed>360</_rotationSpeed><_closeEnoughDistance>0.1</_closeEnoughDistance><_closeEnoughAngle>0.1</_closeEnoughAngle><_faceBeforeMoveAngle>360</_faceBeforeMoveAngle><_maxHeightOffset>1</_maxHeightOffset><_allow3DMovement>False</_allow3DMovement><_allow3DRotation>False</_allow3DRotation><_allowOffGraphMovement>True</_allowOffGraphMovement><_useRootMotion>True</_useRootMotion><_overrideRootRotation>True</_overrideRootRotation><_mecanimParameters></_mecanimParameters></_motor><_animator
+        type="RAIN.Animation.BasicAnimator" reference="7"><_showVisual>True</_showVisual><_leftEye
+        reference="8"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_leftEye><_rightEye
+        reference="9"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_rightEye><_head
+        reference="10"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_head><_neck
+        reference="11"><_jointColor>0,1,0,1</_jointColor><_joint sceneobject=""></_joint><_jointOffset>0,0,0</_jointOffset><_jointOrientation>0,0,0</_jointOrientation><_maxLeftRight>60</_maxLeftRight><_maxUpDown>45</_maxUpDown><_weight>1</_weight></_neck><_lookTime>1</_lookTime><_minimumTargetChange>0.1</_minimumTargetChange><_resetEachFrame>False</_resetEachFrame></_animator><_navigator
+        type="RAIN.Navigation.BasicNavigator" reference="12"><_drawPaths>False</_drawPaths><_pathColor>0.6,0,0.6,1</_pathColor><_outlineColorOffset>-0.5</_outlineColorOffset><_maxPathfindingSteps>100</_maxPathfindingSteps><_maxPathLength>0</_maxPathLength><_padding>0</_padding><_graphTags></_graphTags></_navigator><_senses
+        type="RAIN.Perception.BasicSenses" reference="13"><_sensors><element0 type="RAIN.Perception.Sensors.VisualSensor"
+        reference="14"><_showVisual>True</_showVisual><_sensorName>Close</_sensorName><_isActive>True</_isActive><_sensorColor>0,0.6,0,1</_sensorColor><_mountPoint
+        sceneobject=""></_mountPoint><_positionOffset>0,0.8,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>1.66</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>360</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>False</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element0><element1
+        type="RAIN.Perception.Sensors.VisualSensor" reference="15"><_showVisual>True</_showVisual><_sensorName>Vision</_sensorName><_isActive>True</_isActive><_sensorColor>0.6,0.6,0.6,1</_sensorColor><_mountPoint
+        sceneobject="5f65a219-739e-435d-957a-ea31fba955a7" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>15</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>180</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element1><element2
+        type="RAIN.Perception.Sensors.VisualSensor" reference="16"><_showVisual>True</_showVisual><_sensorName>Disparo</_sensorName><_isActive>True</_isActive><_sensorColor>0,0.6,0,1</_sensorColor><_mountPoint
+        sceneobject="5f65a219-739e-435d-957a-ea31fba955a7" component="0"></_mountPoint><_positionOffset>0,0,0</_positionOffset><_angleOffset>0,0,0</_angleOffset><_filters></_filters><_range>7</_range><_canDetectSelf>False</_canDetectSelf><_horizontalAngle>360</_horizontalAngle><_verticalAngle>180</_verticalAngle><_lineOfSight>True</_lineOfSight><_lineOfSightMask>-5</_lineOfSightMask></element2></_sensors></_senses><_customElements></_customElements></_ai></component>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedMetaDocument
+      value: <meta><element0><key>/component/_ai+_selected</key><value type="System.Int32">5</value></element0><element1><key>/component/_ai/_navigator/_graphTags+_foldout</key><value
+        type="System.Boolean">False</value></element1></meta>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: a4b8a543c0ae8da47b7107b036332b65, type: 3}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 495d44f823345994592bd1ccb749f634, type: 3}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 4900000, guid: 495d44f823345994592bd1ccb749f634, type: 3}
+    - target: {fileID: 114644092171274074, guid: 19d90a298d8a9264e968df912ff38236,
+        type: 2}
+      propertyPath: _serializer._serializedCustomData.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 19d90a298d8a9264e968df912ff38236, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1894574580 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1193206063635640, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}
+--- !u!4 &1894574581 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4669269535157266, guid: e4ad19db05e4bd748bd2d998eaf92cf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1815385081}

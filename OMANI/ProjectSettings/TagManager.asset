@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - persona
+  - objeto
+  - changecamera1
+  - IncubadoraNacimiento
+  - Destroyer
+  - ChangeLevel
+  - ChangeToLevel2
+  - terreno
+  - StillCamera
+  - Cemento
+  - Cesped
+  - PadreCamara
+  - Guardia
+  - mano
+  - Brain
+  - lever
+  - palanca
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Suelo
+  - Barroboy_Incubadora
+  - camara
+  - collider_Ignorable
+  - Cristales_Incubadora
+  - Barroboy
+  - Guardias
+  - Persona
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: nubes
+    uniqueID: 726868027
+    locked: 0
