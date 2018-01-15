@@ -23,4 +23,12 @@ public class Puerta : MonoBehaviour {
     private void LateUpdate()
     {
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player") {
+            AbrirPuerta();
+        }
+        Debug.Log("Entrado");
+    }
 }
