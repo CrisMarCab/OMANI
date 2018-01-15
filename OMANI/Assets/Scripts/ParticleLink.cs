@@ -84,6 +84,7 @@ public class ParticleLink : MonoBehaviour
         if (selected != null)
         {
             selected.GetComponentInChildren<cakeslice.Outline>().eraseRenderer = false;
+
             //esto es para poner el modo "borracho/controlado" ne las animaciones
             AnimatorChange(selected);
         }

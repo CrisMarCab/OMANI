@@ -81,6 +81,7 @@ public class camara_MindControl : MonoBehaviour
             {
                 if (!lever)//NORMAL 
                 {
+                    POV.transform.position = controled.transform.forward;
                     
                     
                     if (objeto != null) //Poner el objeto en su posición
@@ -219,14 +220,7 @@ public class camara_MindControl : MonoBehaviour
             Desactivar(); //esto desactiva todas las acciones (de momento solo la mano)
         }
         
-        controled.GetComponentInChildren<Collider>().enabled = true;
-        controled.GetComponentInChildren<Rigidbody>().isKinematic = false;
-        controled.GetComponentInChildren<Renderer>().enabled = true;
-
-        if (Camera.main.gameObject.GetComponent<Collider>() != null)
-        {
-            Camera.main.gameObject.GetComponent<Collider>().enabled = true; //activar collider de la camara
-        }
+        
         Camera.main.transform.parent = this.transform; //Camara to original parent
         particles.liberar(); //Free particles
 
@@ -238,8 +232,7 @@ public class camara_MindControl : MonoBehaviour
         {
             scriptlenguaje.protagonist.GetComponent<BoyMovimiento>().enabled = true; //enable movement
         }
-
-        transform.GetComponent<ControlCamara>().enabled = true;
+        
         controled.GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem("state", "free");
         Cursor.lockState = CursorLockMode.None;
 
@@ -249,6 +242,8 @@ public class camara_MindControl : MonoBehaviour
         gotThere = false;
 
         //diable this script
+
+        CamaraVirtual_POV.transform.gameObject.SetActive(false);
         this.enabled = false;
 
     }
