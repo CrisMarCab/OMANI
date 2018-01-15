@@ -15,9 +15,9 @@ MonoBehaviour:
   HolderNodes:
   - AssetPath: .currentai
     BehaviorTreeName: (No AI Selected)
-    BehaviorTreeID: 1
-    LastUpdate: 636516224644768207
-    LastModified: 636516224572715615
+    BehaviorTreeID: 0
+    LastUpdate: 636516397218706545
+    LastModified: 636516397228772444
     Errored: 0
   - AssetPath: .createxml
     BehaviorTreeName: Create New Behavior Tree
@@ -46,8 +46,8 @@ MonoBehaviour:
   - AssetPath: Assets/AI/BehaviorTrees/Guardias.txt
     BehaviorTreeName: Guardias
     BehaviorTreeID: 1
-    LastUpdate: 636516224644768207
-    LastModified: 636516224572715615
+    LastUpdate: 636516399320239006
+    LastModified: 636516399317841976
     Errored: 0
   - AssetPath: Assets/AI/BehaviorTrees/idle.txt
     BehaviorTreeName: idle
@@ -155,7 +155,7 @@ MonoBehaviour:
       _type: 4
       _stateIndex: 1
       _parent: 0
-      _lastUpdate: 636516224644768207
+      _lastUpdate: 636516399307726115
       _children: 02000000
       _variables: 
       _focused: 0
@@ -207,7 +207,7 @@ MonoBehaviour:
       _type: 16
       _stateIndex: 2
       _parent: 1
-      _lastUpdate: 636516224644768207
+      _lastUpdate: 636516396451814387
       _children: 03000000040000000500000007000000090000000c000000
       _variables: 
       _focused: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 5
       _parent: 2
-      _lastUpdate: 636516224644768207
+      _lastUpdate: 636516396451809373
       _children: 06000000
       _variables: 
       _focused: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 7
       _parent: 2
-      _lastUpdate: 636516224644768207
+      _lastUpdate: 636516396451814387
       _children: 08000000
       _variables: 
       _focused: 0
@@ -571,7 +571,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 9
       _parent: 2
-      _lastUpdate: 636516224644768207
+      _lastUpdate: 636516396451814387
       _children: 0a0000000b000000
       _variables: 
       _focused: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
       _type: 19
       _stateIndex: 12
       _parent: 2
-      _lastUpdate: 636516224644778235
+      _lastUpdate: 636516396451824416
       _children: 0d0000002b00000036000000
       _variables: 
       _focused: 0
@@ -771,7 +771,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 13
       _parent: 12
-      _lastUpdate: 636516224644768207
+      _lastUpdate: 636516396451814387
       _children: 0e000000
       _variables: 
       _focused: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
       _type: 19
       _stateIndex: 14
       _parent: 13
-      _lastUpdate: 636516224644773221
+      _lastUpdate: 636516396451819568
       _children: 0f00000016000000
       _variables: 
       _focused: 0
@@ -859,7 +859,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 15
       _parent: 14
-      _lastUpdate: 636516224644768207
+      _lastUpdate: 636516396451814387
       _children: 10000000
       _variables: 
       _focused: 0
@@ -903,7 +903,7 @@ MonoBehaviour:
       _type: 20
       _stateIndex: 16
       _parent: 15
-      _lastUpdate: 636516224644773221
+      _lastUpdate: 636516396451819568
       _children: 1100000012000000130000001400000015000000
       _variables: 
       _focused: 0
@@ -1215,7 +1215,7 @@ MonoBehaviour:
       _type: 16
       _stateIndex: 22
       _parent: 14
-      _lastUpdate: 636516224644773221
+      _lastUpdate: 636516396451819568
       _children: 1700000018000000190000001a000000
       _variables: 
       _focused: 0
@@ -1439,8 +1439,8 @@ MonoBehaviour:
       _type: 19
       _stateIndex: 26
       _parent: 22
-      _lastUpdate: 636516224644773221
-      _children: 1b0000001f00000026000000
+      _lastUpdate: 636516399294131171
+      _children: 1b0000001f000000
       _variables: 
       _focused: 0
     - _fields:
@@ -1449,7 +1449,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: open
-        _currentValue: True
+        _currentValue: False
         _recordChange: 0
         _changed: 0
       - _field: repeatuntil
@@ -1483,8 +1483,8 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 27
       _parent: 26
-      _lastUpdate: 636516224644773221
-      _children: 1c000000
+      _lastUpdate: 636516399307726115
+      _children: 1c000000280000002a000000
       _variables: 
       _focused: 0
     - _fields:
@@ -1493,7 +1493,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: open
-        _currentValue: True
+        _currentValue: False
         _recordChange: 0
         _changed: 0
       - _field: repeatuntil
@@ -1535,8 +1535,8 @@ MonoBehaviour:
       _type: 16
       _stateIndex: 28
       _parent: 27
-      _lastUpdate: 636516224644773221
-      _children: 1d0000001e000000
+      _lastUpdate: 636516399167754067
+      _children: 1e0000001d000000
       _variables: 
       _focused: 0
     - _fields:
@@ -1657,7 +1657,7 @@ MonoBehaviour:
         _recordChange: 1
         _changed: 0
       - _field: open
-        _currentValue: True
+        _currentValue: False
         _recordChange: 0
         _changed: 0
       - _field: repeatuntil
@@ -1691,7 +1691,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 31
       _parent: 26
-      _lastUpdate: 636516224644773221
+      _lastUpdate: 636516396451824416
       _children: 20000000
       _variables: 
       _focused: 0
@@ -1735,7 +1735,7 @@ MonoBehaviour:
       _type: 20
       _stateIndex: 32
       _parent: 31
-      _lastUpdate: 636516224644773221
+      _lastUpdate: 636516396451824416
       _children: 2100000022000000230000002400000025000000
       _variables: 
       _focused: 0
@@ -2022,11 +2022,11 @@ MonoBehaviour:
         _changed: 0
       _type: 5
       _stateIndex: 38
-      _parent: 26
-      _lastUpdate: 636516224644773221
+      _parent: 0
+      _lastUpdate: 636516396451824416
       _children: 27000000
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: sequencer
@@ -2067,8 +2067,8 @@ MonoBehaviour:
       _type: 20
       _stateIndex: 39
       _parent: 38
-      _lastUpdate: 636516224644773221
-      _children: 28000000290000002a000000
+      _lastUpdate: 636516397099949625
+      _children: 
       _variables: 
       _focused: 0
     - _fields:
@@ -2118,7 +2118,7 @@ MonoBehaviour:
         _changed: 0
       _type: 14
       _stateIndex: 40
-      _parent: 39
+      _parent: 27
       _lastUpdate: 0
       _children: 
       _variables: 
@@ -2158,11 +2158,11 @@ MonoBehaviour:
         _changed: 0
       _type: 21
       _stateIndex: 41
-      _parent: 39
+      _parent: 0
       _lastUpdate: 0
       _children: 
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: Perdido
@@ -2202,7 +2202,7 @@ MonoBehaviour:
         _changed: 0
       _type: 9
       _stateIndex: 42
-      _parent: 39
+      _parent: 27
       _lastUpdate: 0
       _children: 
       _variables: 
@@ -2247,7 +2247,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 43
       _parent: 12
-      _lastUpdate: 636516224644773221
+      _lastUpdate: 636516396451824416
       _children: 2c000000
       _variables: 
       _focused: 0
@@ -2291,7 +2291,7 @@ MonoBehaviour:
       _type: 20
       _stateIndex: 44
       _parent: 43
-      _lastUpdate: 636516224644778235
+      _lastUpdate: 636516396451824416
       _children: 2d0000002e00000031000000
       _variables: 
       _focused: 0
@@ -2395,10 +2395,10 @@ MonoBehaviour:
       _type: 16
       _stateIndex: 46
       _parent: 44
-      _lastUpdate: 636516224644778235
+      _lastUpdate: 636516396451824416
       _children: 2f00000030000000
       _variables: 
-      _focused: 0
+      _focused: 1
     - _fields:
       - _field: name
         _currentValue: move
@@ -2551,7 +2551,7 @@ MonoBehaviour:
       _type: 20
       _stateIndex: 49
       _parent: 44
-      _lastUpdate: 636516224644778235
+      _lastUpdate: 636516396451824416
       _children: 32000000330000003400000035000000
       _variables: 
       _focused: 0
@@ -2791,7 +2791,7 @@ MonoBehaviour:
       _type: 5
       _stateIndex: 54
       _parent: 12
-      _lastUpdate: 636516224644778235
+      _lastUpdate: 636516396451824416
       _children: 37000000
       _variables: 
       _focused: 0
@@ -2835,7 +2835,7 @@ MonoBehaviour:
       _type: 20
       _stateIndex: 55
       _parent: 54
-      _lastUpdate: 636516224644778235
+      _lastUpdate: 636516396451829426
       _children: 380000003b0000003c0000003d0000003e0000003f000000
       _variables: 
       _focused: 0
@@ -2887,7 +2887,7 @@ MonoBehaviour:
       _type: 16
       _stateIndex: 56
       _parent: 55
-      _lastUpdate: 636516224644778235
+      _lastUpdate: 636516396451829426
       _children: 390000003a000000
       _variables: 
       _focused: 0
