@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ScriptAscensor : MonoBehaviour
 {
-    bool go = false;
+    public bool go = false;
+    [SerializeField] GameObject CamaraStatica;
 
     private void Update()
     {
@@ -22,15 +23,10 @@ public class ScriptAscensor : MonoBehaviour
 
     IEnumerator StartGoingDown()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+        CamaraStatica.SetActive(true);
         go = true;
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.transform.tag == "terreno")
-        {
-            go = false;
-        }
-    }
+   
 }
 

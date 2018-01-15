@@ -14,7 +14,7 @@ public class ScriptPlataformaPuzle : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         puzle.go = true;
-        GetComponent<AudioSource>().Play();
+        //GetComponent<AudioSource>().Play();
     }
     private void OnTriggerExit(Collider other)
     {
