@@ -85,17 +85,23 @@ public class ParticleLink : MonoBehaviour
         {
             selected.GetComponentInChildren<cakeslice.Outline>().eraseRenderer = false;
             //esto es para poner el modo "borracho/controlado" ne las animaciones
-            if(selected.transform.tag == "persona") { 
-            if (selected.GetComponent<Animator>().runtimeAnimatorController != Controledanimatons) {
-                PreviousControler = selected.GetComponent<Animator>().runtimeAnimatorController;
-                 selected.GetComponent<Animator>().runtimeAnimatorController = Controledanimatons;
-            }
+            AnimatorChange(selected);
+        }
+    }
+
+    public void AnimatorChange(GameObject pSelected)
+    {
+        if (pSelected.transform.tag == "persona")
+        {
+            if (pSelected.GetComponent<Animator>().runtimeAnimatorController != Controledanimatons)
+            {
+                PreviousControler = pSelected.GetComponent<Animator>().runtimeAnimatorController;
+                pSelected.GetComponent<Animator>().runtimeAnimatorController = Controledanimatons;
             }
         }
     }
 
-
-        IEnumerator crearLink()
+    IEnumerator crearLink()
         {
 
         

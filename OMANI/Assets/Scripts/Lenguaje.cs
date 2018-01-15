@@ -157,11 +157,12 @@ public class Lenguaje : MonoBehaviour
             protagonist.GetComponent<Animator>().SetFloat("AnimSpeed", 0); //paro al prota, para que no siga caminando
             //protagonist.GetComponent<BoyMovimiento>().enabled = false;
         }
-		padrecamara.GetComponent<ControlCamara>().enabled = false;
 		camara_MindControl mindcontrol = padrecamara.GetComponent<camara_MindControl>();
 		mindcontrol.enabled = true;
 		mindcontrol.controled = controlObj;
         controlObj.GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem("state","idle");
+        particles.AnimatorChange(controlObj);
+
         this.enabled = false;
 	}
 }

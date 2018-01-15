@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Cinemachine;
 using RAIN.Action;
 using RAIN.Core;
 using RAIN.Entities;
@@ -27,27 +27,17 @@ public class camara_MindControl : MonoBehaviour
 
     public delegate void DesactivarAcciones();
     public static event DesactivarAcciones Desactivar;
-
+    public  CinemachineVirtualCamera CamaraVirtual_POV;
+    CinemachinePOV POV;
     bool gotThere = false, lever;
-    Quaternion originalRotation;
     ParticleLink particles;
     // Use this for initialization
     void Start()
     {
         camara = Camera.main;
        
-        Rigidbody rb = GetComponent<Rigidbody>();
-        if (rb)
-            rb.freezeRotation = true;
-        originalRotation = Camera.main.transform.localRotation;
         particles = GameObject.FindObjectOfType<ParticleLink>().GetComponent<ParticleLink>();
-
-        if (Camera.main.gameObject.GetComponent<Collider>() != null)
-        {
-            Camera.main.gameObject.GetComponent<Collider>().enabled = false; //desactivar collider de la camara
-        }
-
-
+        
     }
 
     // Update is called once per frame
@@ -59,24 +49,15 @@ public class camara_MindControl : MonoBehaviour
             ObjectPosition = cabeza.transform.Find("ObjectPosition").transform;
             if (!gotThere)
             {
-                if (Camera.main.gameObject.GetComponent<Collider>() != null)
-                {
-                    Camera.main.gameObject.GetComponent<Collider>().enabled = false; //desactivar collider de la camara
-                }
+
                 //Getting close movement, with fov modification
-                camara.transform.position = Vector3.Lerp(Camera.main.transform.position, cabeza.transform.position, Time.deltaTime * 15);
-                camara.fieldOfView += 1f;
+                CamaraVirtual_POV.transform.gameObject.SetActive(true);
+                CamaraVirtual_POV.Follow = cabeza.transform;
+                POV = CamaraVirtual_POV.GetCinemachineComponent<CinemachinePOV>();
+                
+
                 if (Vector3.Distance(camara.transform.position, cabeza.transform.position) < 0.2f)
                 {
-
-                    controled.GetComponentInChildren<cakeslice.Outline>().eraseRenderer = true; //elimino el outline de quien controlo
-
-                    camara.transform.parent = cabeza.transform; //camara como hijo de la cabeza
-
-                    camara.fieldOfView = 70; //reestablezco el fov
-
-                    //controled.GetComponentInChildren<Renderer>().enabled = false; PROBANDO SIN QUITAR EL RENDERER
-                    controled.GetComponentInChildren<Rigidbody>().isKinematic = true;
 
                     Cursor.lockState = CursorLockMode.Locked; //hacer desaparecer el cursor
 
@@ -100,33 +81,16 @@ public class camara_MindControl : MonoBehaviour
             {
                 if (!lever)//NORMAL 
                 {
-
-                    camara.transform.rotation = new Quaternion(0, 0, 0, 0);
-                    camara.transform.position = new Vector3(0, 0, 0);
-                    //control the cam with mouse;
-                    if (objeto != null)
+                    
+                    
+                    if (objeto != null) //Poner el objeto en su posición
                     {
-
                         objeto.transform.position = ObjectPosition.position;
                         objeto.transform.rotation = ObjectPosition.rotation;
                     }
-
-                    Camera.main.transform.position = cabeza.transform.position;
-
-                    var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-
-                    md = Vector2.Scale(md, new Vector2(sensitivity * smoothing, sensitivity * smoothing));
-
-                    smoothV.x = Mathf.Lerp(smoothV.x, md.x, 1f / smoothing);
-                    smoothV.y = Mathf.Lerp(smoothV.y, md.y, 1f / smoothing);
-                    mouseLook += smoothV;
-
-                    // Limits the vertical angle of the camera.
-
-                    mouseLook.y = Mathf.Clamp(mouseLook.y, -55f, 40f);
-
-                    camara.transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
-                    controled.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, controled.transform.transform.up);
+                    
+                    
+                    controled.transform.localRotation = Quaternion.AngleAxis(POV.m_HorizontalAxis.Value +90, controled.transform.transform.up);
 
                     //NOW WE CONTROL THE CLICKS!!
                     //---------------------------------------------------------------
@@ -136,30 +100,12 @@ public class camara_MindControl : MonoBehaviour
                     RaycastHit hit;
                     if (Physics.Raycast(ray, out hit, 100))
                     {
-                        /*Da problemas porque hace que le cambie la animacion a la people, hay que usar otra cosa
-                        if (hit.transform.tag == "persona")
-                        {
-                            particles.selected = hit.transform.gameObject;//highlight on people :D
-                        }
-                        else if (hit.transform.tag == "objeto")
-                        {
-                            particles.selected = hit.transform.gameObject;//highlight on people :D
-
-
-                        }
-                        else
-                        {
-                            particles.selected = null;
-                        }
-                        */
-
-
+                        
                         if (Input.GetMouseButtonDown(1))
                         {
                             if (hit.transform.tag == "persona")
                             {
-
-                                controled.GetComponentInChildren<Renderer>().enabled = true;
+                                
                                 gotThere = false;
                                 controled = hit.transform.gameObject;
                                 controled.GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem("state", "idle");
@@ -181,6 +127,7 @@ public class camara_MindControl : MonoBehaviour
                         objeto = null;
                         leftClick(controled, controled.GetComponent<Npc_stats>(), camara.transform.forward);
                     }
+                   // controled.transform.forward = camara.transform.forward;
                 }
                 else //INTERRUPTOR / PALANCA
                 {
