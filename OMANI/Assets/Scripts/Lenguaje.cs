@@ -17,7 +17,7 @@ public class Lenguaje : MonoBehaviour
     public static event doComplexAction temporal;
 
     public delegate void doSimpleAction(GameObject active, GameObject w1);
-    public static event doSimpleAction follow,pickup,lever;
+    public static event doSimpleAction follow,pickup,lever,attack;
 
 
     public delegate void doAction(GameObject active);
@@ -58,6 +58,11 @@ public class Lenguaje : MonoBehaviour
                             direction = hit.transform.gameObject;
                             particles.dosCosas(selected, direction, "orden");
                             lever(selected, direction);
+                            break;
+                        case "Guardia":
+                            direction = hit.transform.gameObject;
+                           // particles.dosCosas(selected, direction, "orden");
+                            attack(selected, direction);
                             break;
                         case "persona":
 						//comprobamos si es la misma persona que hay seleccionada

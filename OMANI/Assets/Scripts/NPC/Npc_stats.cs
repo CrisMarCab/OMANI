@@ -46,6 +46,7 @@ public class Npc_stats : MonoBehaviour
         Lenguaje.follow += Follow;
         Lenguaje.pickup += Pickup;
         Lenguaje.lever += Lever;
+        Lenguaje.attack += Attack;
 
         aiRig = gameObject.GetComponentInChildren<AIRig>();
         sonido_base = GetComponent<AudioSource>();
@@ -146,6 +147,20 @@ public class Npc_stats : MonoBehaviour
 
             aiRig.AI.WorkingMemory.SetItem("objective", w1);
             aiRig.AI.WorkingMemory.SetItem("state", "pickup");
+        }
+    }
+    void Attack(GameObject active, GameObject w1)
+    {
+        //changes variables on Ai so that i goes on to pickup state
+        if (transform.gameObject == active)
+        {
+
+            w1.AddComponent<EntityControler>();
+            EntityControler controlerScript = w1.AddComponent<EntityControler>();
+            controlerScript.VeryImportantPerson = this.transform.gameObject;
+
+            aiRig.AI.WorkingMemory.SetItem("objective", w1);
+            aiRig.AI.WorkingMemory.SetItem("state", "attack");
         }
     }
     void Follow(GameObject active, GameObject w1)
