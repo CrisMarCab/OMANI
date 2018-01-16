@@ -13,11 +13,26 @@ public class ScriptPlataformaPuzle : MonoBehaviour {
 	
     private void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Player" || other.tag == "persona")
+        {
+
         puzle.go = true;
+        if (puzle.up == true)
+        {
+            puzle.up = false;
+        }
+        else
+        {
+            puzle.up = true;
+        }
+
+        }
         //GetComponent<AudioSource>().Play();
     }
+    /*
     private void OnTriggerExit(Collider other)
     {
        
     }
+    */
 }

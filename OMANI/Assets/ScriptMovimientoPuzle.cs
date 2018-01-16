@@ -5,8 +5,8 @@ using UnityEngine;
 public class ScriptMovimientoPuzle : MonoBehaviour {
 
     public bool go = false;
-    [SerializeField]
-    bool up = true,vertical = true;
+    public bool up = true;
+    [SerializeField] bool vertical = true;
 
     void Update()
     {
@@ -46,17 +46,15 @@ public class ScriptMovimientoPuzle : MonoBehaviour {
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (go == true)
+        if (collision.transform.tag == "IncubadoraNacimiento")
         {
-            go = false;
+            if (go == true)
+            {
+                go = false;
+            }
+            
         }
-        if (up == true)
-        {
-            up = false;
-        }else
-        {
-            up = true;
-        }
+       
     }
 
 }
