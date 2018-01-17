@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/S1/S1_CrystalBorn.unity
     guid: 6457ebddddd69d543ac24ffe6887986e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/S2/S2_Playground.unity
     guid: 3c56abd22303e5949a4b1790cdabf56b
   - enabled: 0
     path: Assets/WallpaperGenerator.unity
     guid: 1d94af40094577c4ba0a8c43cceae30b
+  - enabled: 1
+    path: Assets/PTR.unity
+    guid: 40636505f06c7d54890caf7d953d6237

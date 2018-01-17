@@ -21,14 +21,13 @@ public class CA_Ragdoll : RAINAction
 
         Bone.GetComponent<Rigidbody>().AddForce(ai.Body.transform.forward * 5000);
 
-
-        ai.Body.GetComponent<AudioSource>().Play();
-
+        Debug.Log("He pasado por mi casa.");
+        /*
         var Malo = ai.WorkingMemory.GetItem<GameObject>("varVisto").GetComponentInChildren<EntityRig>().Entity;
         Malo.GetAspect("Malo").MountPoint = Bone.transform;
         Malo.GetAspect("Malo").VisualSize = 0.04f;
         Malo.GetAspect("Malo").PositionOffset = new Vector3(0, 0, 0);
-        
+        */
         return ActionResult.SUCCESS;
     }
 
