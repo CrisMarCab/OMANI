@@ -81,7 +81,7 @@ public class camara_MindControl : MonoBehaviour
             {
                 if (!lever)//NORMAL 
                 {
-                    POV.transform.position = controled.transform.forward;
+                    //POV.transform.position = controled.transform.forward;
                     
                     
                     if (objeto != null) //Poner el objeto en su posición
@@ -91,7 +91,7 @@ public class camara_MindControl : MonoBehaviour
                     }
                     
                     
-                    controled.transform.localRotation = Quaternion.AngleAxis(POV.m_HorizontalAxis.Value +90, controled.transform.transform.up);
+                    controled.transform.localRotation = Quaternion.AngleAxis(POV.m_HorizontalAxis.Value , controled.transform.transform.up);
 
                     //NOW WE CONTROL THE CLICKS!!
                     //---------------------------------------------------------------
