@@ -61,7 +61,7 @@ public class Lenguaje : MonoBehaviour
                             break;
                         case "Guardia":
                             direction = hit.transform.gameObject;
-                           // particles.dosCosas(selected, direction, "orden");
+                            particles.dosCosas(selected, direction, "orden");
                             attack(selected, direction);
                             break;
                         case "persona":
@@ -139,9 +139,7 @@ public class Lenguaje : MonoBehaviour
                 }
                 else
                 {
-					
-					particles.liberar();
-                    selected = null;
+                    QuitarSeleccion();
                 }
             }
         }
@@ -150,8 +148,13 @@ public class Lenguaje : MonoBehaviour
 		//control de la particulas
 		
     }
-   
-    
+
+    public void QuitarSeleccion()
+    {
+        particles.liberar();
+        selected = null;
+    }
+
     void MindControl(GameObject controlObj) {
         //particles.selected = null;
         particles.liberar(); // adios particulas

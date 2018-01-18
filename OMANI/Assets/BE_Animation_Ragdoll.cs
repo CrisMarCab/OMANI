@@ -25,7 +25,8 @@ public class BE_Animation_Ragdoll : StateMachineBehaviour {
 
         var Bone = animator.gameObject.transform.GetChild(0).GetChild(0).gameObject;
 
-        Bone.GetComponent<Rigidbody>().AddForce(animator.gameObject.transform.forward * 10000);
+        Bone.GetComponent<Rigidbody>().AddForce(new Vector3(1,1,0) * 5000);
+        FindObjectOfType<Lenguaje>().QuitarSeleccion();
 
     }
 

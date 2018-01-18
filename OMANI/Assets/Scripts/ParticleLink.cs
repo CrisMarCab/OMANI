@@ -50,7 +50,7 @@ public class ParticleLink : MonoBehaviour
                 }
 
             }
-            else if (vHit.transform.tag == "persona")
+            else if (vHit.transform.tag == "persona" || vHit.transform.tag == "Guardia")
             {
 
                 lasttouchedobject = vHit.transform.gameObject;
@@ -130,6 +130,13 @@ public class ParticleLink : MonoBehaviour
                         else if (parte1.transform.tag == "lever")
                         {
                             GameObject effect;
+                            effect = Instantiate(blueeffect, parte1.transform.position, Quaternion.identity);
+                            effect.GetComponent<LifeofaParticle>().destination = parte2.transform.gameObject;
+
+                        }
+                        else if (parte1.transform.tag == "Guardia")
+                        {
+                            GameObject effect;
                             effect = Instantiate(redeffect, parte1.transform.position, Quaternion.identity);
                             effect.GetComponent<LifeofaParticle>().destination = parte2.transform.gameObject;
 
@@ -148,6 +155,13 @@ public class ParticleLink : MonoBehaviour
                             effect.GetComponent<LifeofaParticle>().destination = parte1.transform.gameObject;
                         }
                         else if (parte2.transform.tag == "lever")
+                        {
+                            GameObject effect;
+                            effect = Instantiate(blueeffect, parte2.transform.position, Quaternion.identity);
+                            effect.GetComponent<LifeofaParticle>().destination = parte1.transform.gameObject;
+
+                        }
+                        else if (parte1.transform.tag == "Guardia")
                         {
                             GameObject effect;
                             effect = Instantiate(redeffect, parte2.transform.position, Quaternion.identity);
