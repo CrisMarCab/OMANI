@@ -53,7 +53,18 @@ public class BasicLeftCLick : MonoBehaviour {
                 Debug.Log("Ataque!");
                 var anim = GetComponent<Animator>();
                     anim.SetTrigger("Ataque");
-                 //anim.ResetTrigger("Ataque");
+                RaycastHit hit;
+
+                Collider[] hitColliders = Physics.OverlapSphere(this.transform.position, 10);
+                foreach (Collider hitted in hitColliders)
+                {
+                    if (hitted.transform.tag == "objeto")
+                    {
+                        stats.obj_carry = hitted.gameObject;
+                        return;
+                    }
+                }
+                //anim.ResetTrigger("Ataque");
 
             }
         }

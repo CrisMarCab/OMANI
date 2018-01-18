@@ -55,9 +55,8 @@ public class Guardia : MonoBehaviour
             Collider[] hitColliders = Physics.OverlapSphere(this.transform.position, 10);
             foreach (Collider hitted in hitColliders)
             {
-                if (hitted.transform.tag == "persona")
+                if (hitted.transform.tag == "persona" )
                 {
-
                     Malo = hitted.transform.gameObject.GetComponentInChildren<EntityRig>().Entity;
                     Malo.GetAspect("Malo").IsActive = true;
                 }
