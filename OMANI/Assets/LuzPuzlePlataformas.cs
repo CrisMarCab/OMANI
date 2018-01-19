@@ -6,7 +6,7 @@ public class LuzPuzlePlataformas : MonoBehaviour {
     bool activado = false ;
     
     [SerializeField] LuzPuzlePlataformas puzle1,puzle2;
-    [SerializeField] GameObject Efectos, lucesHangar;
+    [SerializeField] GameObject Efectos, lucesHangar, puerta;
 
 
     // Update is called once per frame
@@ -14,6 +14,7 @@ public class LuzPuzlePlataformas : MonoBehaviour {
 		if (activado && puzle1.activado && puzle2.activado)
         {
             lucesHangar.SetActive(true);
+            puerta.SetActive(false);
         }
 	}
     private void OnTriggerEnter(Collider other)
