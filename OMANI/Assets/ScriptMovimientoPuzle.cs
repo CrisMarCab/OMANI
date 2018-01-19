@@ -7,6 +7,7 @@ public class ScriptMovimientoPuzle : MonoBehaviour {
     public bool go = false;
     public bool up = true;
     [SerializeField] bool vertical = true;
+    float velocity = 5f;
 
     void Update()
     {
@@ -18,12 +19,12 @@ public class ScriptMovimientoPuzle : MonoBehaviour {
                     if (up)
                     {
                 
-                        transform.localPosition = new Vector3(transform.localPosition.x + Time.deltaTime, transform.localPosition.y, transform.localPosition.z );
+                        transform.localPosition = new Vector3(transform.localPosition.x + Time.deltaTime * velocity, transform.localPosition.y, transform.localPosition.z );
                     }
                     else
                     {
 
-                        transform.localPosition = new Vector3(transform.localPosition.x - Time.deltaTime, transform.localPosition.y, this.transform.localPosition.z );
+                        transform.localPosition = new Vector3(transform.localPosition.x - Time.deltaTime * velocity, transform.localPosition.y, this.transform.localPosition.z );
 
                     }
                 }
@@ -32,12 +33,12 @@ public class ScriptMovimientoPuzle : MonoBehaviour {
                     if (up)
                     {
 
-                        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z + Time.deltaTime);
+                        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z + Time.deltaTime * velocity);
                     }
                     else
                     {
 
-                        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, this.transform.localPosition.z - Time.deltaTime);
+                        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, this.transform.localPosition.z - Time.deltaTime * velocity);
 
                     }
 

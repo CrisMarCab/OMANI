@@ -34,8 +34,7 @@ public class BasicLeftCLick : MonoBehaviour {
 
             if (stats.obj_carry != null)
             {
-
-                Debug.Log("throw");
+                
                 Rigidbody rb = stats.obj_carry.GetComponent<Rigidbody>();
 
                 rb.useGravity = true;
@@ -61,6 +60,12 @@ public class BasicLeftCLick : MonoBehaviour {
                     if (hitted.transform.tag == "objeto")
                     {
                         stats.obj_carry = hitted.gameObject;
+                        Rigidbody rb = stats.obj_carry.GetComponent<Rigidbody>();
+
+                        rb.useGravity = false;
+                        rb.isKinematic = true;
+
+                        stats.obj_carry.GetComponent<Collider>().enabled = false;
                         return;
                     }
                 }

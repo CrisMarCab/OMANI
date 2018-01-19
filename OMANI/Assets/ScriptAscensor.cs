@@ -9,7 +9,7 @@ public class ScriptAscensor : MonoBehaviour
 
     private void Update()
     {
-        if (go) { transform.position = new Vector3(transform.position.x, transform.position.y - Time.deltaTime, transform.position.z); }
+        if (go) { transform.position = new Vector3(transform.position.x, transform.position.y - Time.deltaTime * 2, transform.position.z); }
     }
     private void OnTriggerEnter(Collider other)
     {

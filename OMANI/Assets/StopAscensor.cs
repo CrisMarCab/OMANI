@@ -13,6 +13,7 @@ public class StopAscensor : MonoBehaviour {
             Ascensoriko.go = false;
             DesactivarCamara.SetActive(false);
             ActivarCamara.SetActive(true);
+            Camera.main.transform.position = ActivarCamara.transform.position;
         }
     }
 
