@@ -7,6 +7,7 @@ public class LuzPuzlePlataformas : MonoBehaviour {
     
     [SerializeField] LuzPuzlePlataformas puzle1,puzle2;
     [SerializeField] GameObject Efectos, lucesHangar, puerta;
+    [SerializeField] Animator BrazoRobotico;
 
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class LuzPuzlePlataformas : MonoBehaviour {
         {
             activado = true;
             Efectos.SetActive(true);
+            BrazoRobotico.SetBool("Activate",true);
         }
     }
 }
