@@ -11,8 +11,7 @@ public class SwapToMine : MonoBehaviour {
         if (other.tag == "Player")
         {
             other.transform.position = goTo.position;
-
-            GameObject.Find("PadreCamara").transform.position = goTo.position;
+            
 
             CamaraParaLaMina.SetActive(true);
 
