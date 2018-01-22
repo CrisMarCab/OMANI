@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Name: SegundaEscenaCustomBlends
   m_EditorClassIdentifier: 
   m_CustomBlends:
+  - m_From: CM LibreFuera
+    m_To: CM TopInterior
+    m_Blend:
+      m_Style: 0
+      m_Time: 2
   - m_From: CM ElevatorRoadToMine
     m_To: '**ANY CAMERA**'
     m_Blend:
-      m_Style: 0
+      m_Style: 4
       m_Time: 2

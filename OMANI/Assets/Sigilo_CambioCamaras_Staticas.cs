@@ -18,7 +18,7 @@ public class Sigilo_CambioCamaras_Staticas : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         mainCamera = Camera.main;
-        controlCamara = FindObjectOfType<ControlCamara>();
+       // controlCamara = FindObjectOfType<ControlCamara>();
 
     }
 
