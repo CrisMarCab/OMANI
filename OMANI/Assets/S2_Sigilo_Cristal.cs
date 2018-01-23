@@ -1,11 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RAIN.Core;
 
 public class S2_Sigilo_Cristal : MonoBehaviour
 {
+    [Header("GameObject")]
+
     [SerializeField]
-    private GameObject piedra;
+    private GameObject piedra, posicionGuardia;
+    [SerializeField]
+    private GameObject[] Guardias_Alarmados = new GameObject[5], luces_normales, luces_rojas;
+    [Space(10, order = 0)]
+
+    [Header("Logica")]
+
     [SerializeField]
     private bool animada, cristalEnZona;
     [SerializeField]
@@ -46,6 +55,8 @@ public class S2_Sigilo_Cristal : MonoBehaviour
             {
                 piedra.GetComponent<Animator>().enabled = animada;
             }
+
+
         }
 
         else
@@ -57,6 +68,8 @@ public class S2_Sigilo_Cristal : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
+        //Provisional mientras no es un boton.
+
         if (collision.gameObject.CompareTag("persona"))
         {
             if (animada == true && contador > 3)
@@ -73,6 +86,21 @@ public class S2_Sigilo_Cristal : MonoBehaviour
                     tiempoInicio = Time.time;
                 }
             }
+        }
+
+        //Si entra el cristal, hay energia.
+        if (collision.gameObject.CompareTag("objeto")) {
+
+            foreach (GameObject luz in luces_normales)
+            {
+                luz.SetActive(true);
+            }
+
+            foreach (GameObject luz in luces_rojas)
+            {
+                luz.SetActive(false);
+            }
+
         }
 
 
@@ -93,6 +121,23 @@ public class S2_Sigilo_Cristal : MonoBehaviour
         {
 
             cristalEnZona = false;
+
+            foreach (GameObject guardia in Guardias_Alarmados)
+            {
+                guardia.GetComponent<Animator>().SetTrigger("LookAround");
+                guardia.GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem<Vector3>("variableVisto", posicionGuardia.transform.position);
+            }
+
+            foreach (GameObject luz in luces_normales)
+            {
+                luz.SetActive(false);
+            }
+
+            foreach (GameObject luz in luces_rojas)
+            {
+                luz.SetActive(true);
+            }
+
         }
     }
 }
