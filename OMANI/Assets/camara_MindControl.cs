@@ -27,7 +27,7 @@ public class camara_MindControl : MonoBehaviour
 
     public delegate void DesactivarAcciones();
     public static event DesactivarAcciones Desactivar;
-    public  CinemachineVirtualCamera CamaraVirtual_POV;
+    public  CinemachineVirtualCamera CamaraVirtual_POV,CamaraVirtual_POV_Palancas;
     CinemachinePOV POV;
     bool gotThere = false, lever;
     ParticleLink particles;
@@ -50,11 +50,30 @@ public class camara_MindControl : MonoBehaviour
             if (!gotThere)
             {
 
-                //Getting close movement, with fov modification
-                CamaraVirtual_POV.transform.gameObject.SetActive(true);
-                CamaraVirtual_POV.Follow = cabeza.transform;
-                POV = CamaraVirtual_POV.GetCinemachineComponent<CinemachinePOV>();
-                
+                lever = controled.GetComponent<Npc_stats>().lever;
+
+                if (lever)
+                {
+                    controled.GetComponent<Npc_stats>().obj_carry = null; //le quito el objeto si llevaba uno
+                    objeto = controled.GetComponentInChildren<AIRig>().AI.WorkingMemory.GetItem<GameObject>("objective"); //el objeto es el interruptor padre
+                    palanca = objeto.transform.Find("lever").gameObject; //la palanca
+
+                    //activo la camara para interruptores y le configuro los parametros
+                    CamaraVirtual_POV_Palancas.transform.gameObject.SetActive(true);
+                    CamaraVirtual_POV_Palancas.Follow = cabeza.transform;
+                    CamaraVirtual_POV_Palancas.LookAt = objeto.transform.Find("CameraFocus").transform;
+                    POV = CamaraVirtual_POV_Palancas.GetCinemachineComponent<CinemachinePOV>();
+
+                }
+                else
+                {
+                    //activo la camara POV libre  y le configuro los parametros
+                    CamaraVirtual_POV.transform.gameObject.SetActive(true);
+                    CamaraVirtual_POV.Follow = cabeza.transform;
+                    POV = CamaraVirtual_POV.GetCinemachineComponent<CinemachinePOV>();
+
+                }
+
 
                 if (Vector3.Distance(camara.transform.position, cabeza.transform.position) < 0.2f)
                 {
@@ -66,13 +85,7 @@ public class camara_MindControl : MonoBehaviour
                         objeto = controled.GetComponent<Npc_stats>().obj_carry; //cojo el objeto que esta llevando, si es que tiene
                     }
 
-                    lever = controled.GetComponent<Npc_stats>().lever;
-                    if (lever)
-                    {
-                        objeto = controled.GetComponentInChildren<AIRig>().AI.WorkingMemory.GetItem<GameObject>("objective");
-                        palanca = objeto.transform.Find("lever").gameObject;
-                      
-                    }
+                   
                     gotThere = true; //Activo los controles de raton (left y right click)
                     Debug.Log(lever);
                 }
@@ -91,7 +104,7 @@ public class camara_MindControl : MonoBehaviour
                     }
                     
                     
-                    controled.transform.localRotation = Quaternion.AngleAxis(POV.m_HorizontalAxis.Value , controled.transform.transform.up);
+                    controled.transform.rotation = Quaternion.AngleAxis(POV.m_HorizontalAxis.Value , controled.transform.up);
 
                     //NOW WE CONTROL THE CLICKS!!
                     //---------------------------------------------------------------
@@ -132,8 +145,7 @@ public class camara_MindControl : MonoBehaviour
                 }
                 else //INTERRUPTOR / PALANCA
                 {
-                    camara.transform.rotation = cabeza.transform.rotation;
-                    camara.transform.position = cabeza.transform.position;
+                    
 
                     
                     float smoother = 100f;
@@ -210,40 +222,39 @@ public class camara_MindControl : MonoBehaviour
 
     public void goBacktoNormal()
     {
-        objeto = null;
-        palanca = null; //reinicio variables
 
         controled.GetComponent<Npc_stats>().lever = false;
+        controled.GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem("state", "free");
+
+        objeto = null;
+        palanca = null; //reinicio variables
         
+        controled = null;
+        gotThere = false;
+
+        /*
         if (Desactivar != null)
         {
             Desactivar(); //esto desactiva todas las acciones (de momento solo la mano)
         }
+        */
         
-        
-        Camera.main.transform.parent = this.transform; //Camara to original parent
         particles.liberar(); //Free particles
 
-        Lenguaje scriptlenguaje = GameObject.FindObjectOfType<Lenguaje>().GetComponent<Lenguaje>();
+        Lenguaje scriptlenguaje = GameObject.FindObjectOfType<Lenguaje>();
 
         scriptlenguaje.enabled = true; //enable main controls
 
-        if (scriptlenguaje.protagonist != null)
-        {
-            scriptlenguaje.protagonist.GetComponent<BoyMovimiento>().enabled = true; //enable movement
-        }
+       
         
-        controled.GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem("state", "free");
         Cursor.lockState = CursorLockMode.None;
 
 
-        //Restart local variables
-        controled = null;
-        gotThere = false;
 
         //diable this script
 
         CamaraVirtual_POV.transform.gameObject.SetActive(false);
+        CamaraVirtual_POV_Palancas.transform.gameObject.SetActive(false);
         this.enabled = false;
 
     }

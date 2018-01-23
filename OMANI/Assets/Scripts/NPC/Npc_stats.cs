@@ -129,8 +129,10 @@ public class Npc_stats : MonoBehaviour
             var actualLever = aiRig.AI.WorkingMemory.GetItem<GameObject>("objective");
             GameObject position = actualLever.transform.Find("position").gameObject;
             IKpalanca = actualLever.transform.Find("lever").transform.position;
+            if (Vector3.Distance(transform.position, position.transform.position) > 0.1) { 
             transform.position = Vector3.Lerp(transform.position, position.transform.position,Time.deltaTime);
             transform.rotation = Quaternion.Lerp(transform.rotation, position.transform.rotation, Time.deltaTime);
+            }
         }
 
     }
