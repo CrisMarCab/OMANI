@@ -55,7 +55,18 @@ public class ScriptMovimientoPuzle : MonoBehaviour {
             }
             
         }
+        if (collision.transform.tag == "Player" || collision.transform.tag == "persona")
+        {
+            collision.transform.parent = this.transform;
+        }
        
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.transform.tag == "Player" || collision.transform.tag == "persona")
+        {
+            collision.transform.parent = null;
+        }
     }
 
 }
