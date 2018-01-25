@@ -4,26 +4,34 @@ using UnityEngine;
 
 public class JuegoDeLaPelota : MonoBehaviour {
     public bool izquierda = false, derecha = false, arriba = false, abajo = false;
-    public Transform rizquierda, rderecha, rarriba, rabajo;
     public float velocity;
     // Use this for initialization
-    void FixedUpdate()
+    void Update()
     {
         if (izquierda)
         {
+            Quaternion previous = transform.rotation;
+            transform.rotation = Quaternion.AngleAxis(velocity, Vector3.up) * previous;
 
-            transform.rotation = Quaternion.Lerp(transform.rotation,rizquierda.rotation, velocity);
-        }else if (derecha)
+            //transform.eulerAngles = new Vector3(0.0f, transform.eulerAngles.y+velocity, transform.eulerAngles.z);
+        }
+        else if (derecha)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, rderecha.rotation, velocity);
+            Quaternion previous = transform.rotation;
+            transform.rotation = Quaternion.AngleAxis(-velocity, Vector3.up) * previous;
+            //transform.eulerAngles = new Vector3(0.0f, transform.eulerAngles.y -velocity, transform.eulerAngles.z);
         }
         else if(arriba)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, rarriba.rotation, velocity);
+            Quaternion previous = transform.rotation;
+            transform.rotation = Quaternion.AngleAxis( velocity, Vector3.forward) * previous;
+            //transform.eulerAngles = new Vector3(0.0f, transform.eulerAngles.y, transform.eulerAngles.z +velocity);
         }
         else if(abajo)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, rabajo.rotation, velocity);
+            Quaternion previous = transform.rotation;
+            transform.rotation = Quaternion.AngleAxis(- velocity, Vector3.forward) * previous;
+            //transform.eulerAngles = new Vector3(0.0f, transform.eulerAngles.y, transform.eulerAngles.z - velocity);
         }
     }
 }
