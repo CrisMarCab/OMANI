@@ -22,3 +22,13 @@ MonoBehaviour:
     m_Blend:
       m_Style: 4
       m_Time: 2
+  - m_From: '**ANY CAMERA**'
+    m_To: CM POV
+    m_Blend:
+      m_Style: 2
+      m_Time: 1
+  - m_From: '**ANY CAMERA**'
+    m_To: CM POVInterruptor
+    m_Blend:
+      m_Style: 2
+      m_Time: 1
